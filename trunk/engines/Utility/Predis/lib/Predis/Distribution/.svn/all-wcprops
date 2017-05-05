@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/lib/Predis/Distribution
+END
+IDistributionStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/lib/Predis/Distribution/IDistributionStrategy.php
+END
+EmptyRingException.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/lib/Predis/Distribution/EmptyRingException.php
+END
+INodeKeyGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/lib/Predis/Distribution/INodeKeyGenerator.php
+END
+KetamaPureRing.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/lib/Predis/Distribution/KetamaPureRing.php
+END
+HashRing.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/lib/Predis/Distribution/HashRing.php
+END

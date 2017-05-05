@@ -1,0 +1,47 @@
+<div id="theContainer2" class="galleryPage">
+    <div class="theContainer2">
+        <div class="theContent2">
+        	<div class="col-content">
+                <div class="theBox">
+                    <div class="theBox-title">
+                        <h2 class="fl">Template Content</h2>                       
+                    </div><!-- /.theBox-title -->
+                    <div class="theBox-content">
+                        <div class="forms">
+                            <form id="create-challenge" method="POST" action="{$basedomain}sdk/newDataInput" enctype="multipart/form-data" >
+							<table border="1">
+								{foreach from=$datacustomize key=key item=val} 
+								<tr>
+									<td>{$val.sections}</td>
+									<td>:</td>
+									<td>
+										{if $val.type=='upload'}<input type="file" name="{$val.sections}" value="" />{$val.values}
+										{else} <input type="text" name="{$val.sections}_{$val.updateon}" value="{$val.values}" />
+										{/if}
+									</td>
+								</tr>
+								 {/foreach}
+								 <tr>
+									<td>add new templates</td>
+									<td>:</td>
+									<td>	
+										click to add
+									</td>
+								</tr>
+								<tr>
+									<td><input type="hidden" name="input" value="1"/> 
+									<td><input type="hidden" name="brand" value="{$brandid}"/>
+									<input type="submit" value="Save" class="button fr"/></td>
+								</tr>
+							</table>
+                                <div class="rows2">
+									
+                                </div><!-- /.rows2 -->
+                            </form>
+                        </div> <!-- /.forms -->
+                    </div> <!-- /.theBox-content -->
+                </div> <!-- /.theBox -->
+            </div><!-- /.col-content -->
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->

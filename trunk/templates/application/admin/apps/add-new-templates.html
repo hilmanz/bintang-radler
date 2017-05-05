@@ -1,0 +1,104 @@
+<script type="text/javascript">
+{literal}
+	$(document).ready(function(){
+
+		$('input[type="radio"]').click(function(){
+
+			if($(this).attr("value")=="images"){
+				$(".box").hide();
+				$(".images").show();
+			}
+
+			if($(this).attr("value")=="textfieldarea"){
+				$(".box").hide();
+				$(".textfieldarea").show();
+			}
+
+		});
+	});
+
+</script>
+{/literal}
+<div id="add-event">
+    <div class="panel-dashboard">
+    	<div class="group-date fr">
+       		<div class="input-daterange input-group mainInputDate" id="datepicker">
+            	<div class="datefrom">
+    				<input id="from" type="text" class="input-sm form-control" name="start" /><span class="cal-icon icon-calendar"></span>
+    			</div>
+    			<span class="input-group-addon">to</span>
+    			<div class="datefrom">
+    				<input id="to" type="text" class="input-sm form-control" name="end" /><span class="cal-icon icon-calendar"></span>
+    			</div>
+    		</div><!-- /.mainInputDate -->
+       </div><!-- /.group-date -->
+    </div><!-- /.panel-dashboard -->
+    <div class="content-chart">
+   		<div class="row">
+    	<div class="add-event col-lg-12 ">
+        	<div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title orange"><span class="icon-tag"></span>&nbsp; Add New Event</h3>
+              </div><!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="form-template">
+                    <form class="form-horizontal" method="POST" action="" enctype="multipart/form-data" >
+						
+                        <div class="control-group">
+                        	<label class="control-label" for="">Sections</label>
+                        	<div class="controls">
+                        		<input type="text" id="sections" name="sections" placeholder="Section">
+                        	</div>
+                        </div><!-- /.control-group -->
+						
+						<div class="control-group">
+							<label><input type="radio" value="images"> Image</label>
+							<label><input type="radio" value="textfieldarea"> Textfield</label>
+
+						</div>
+						<div class="images box control-group" hidden >
+							<label class="control-label" for="">Image</label>
+                        	<div class="controls">
+                        		<input type="file" id="images" name="images" name="images">
+                        	</div>
+						</div>
+						<div class="textfieldarea box control-group" hidden >
+							<label class="control-label" for="">Color</label>
+							<div class="controls">
+								<input type="text" id="colorfield cpFocus" name="colorfield" placeholder="Color">
+							</div>
+							
+							<label class="control-label" for="">Size</label>
+							<div class="controls">
+								<input type="text" id="sizefield" name="sizefield" placeholder="Size" >
+							</div>
+							
+							<label class="control-label" for="">Style</label>
+							<div class="controls">
+								<input type="text" id="stylefield" name="stylefield" placeholder="Style" >
+							</div>
+						</div>
+						
+                        <div class="control-group">
+                        	<div class="controls">
+                        		<input type="submit" name="submit" value="Submit" class="btn btn-danger"/>
+                        		<input type="hidden" name="brand" value="{$brandid}" />
+                        		<!-- <button type="submit" class="btn btn-danger">Submit</button> -->
+                        	</div>
+                       </div><!-- /.control-group -->
+                    </form>
+            </div>
+              </div><!-- /.panel-body -->
+            </div><!-- /.panel-primary -->
+          </div><!-- /.uniqVisitorLogin -->
+      </div><!-- /.template-generator -->
+    </div><!-- /.row -->
+    </div><!---ENDcontent-chart-->
+</div><!-- /#BrandEngagement -->
+<script>
+{literal}
+$(document).ready(function(){
+$('#cpFocus').colorpicker({showOn:'focus'});
+});
+</script>
+{/literal}

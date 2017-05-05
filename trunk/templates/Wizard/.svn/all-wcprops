@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/bintang-radler/!svn/ver/12/trunk/templates/Wizard
+END
+navigation.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/bintang-radler/!svn/ver/12/trunk/templates/Wizard/navigation.html
+END
+container.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/bintang-radler/!svn/ver/12/trunk/templates/Wizard/container.html
+END
+edit_container.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/bintang-radler/!svn/ver/12/trunk/templates/Wizard/edit_container.html
+END

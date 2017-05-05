@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis
+END
+MonitorContextTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/MonitorContextTest.php
+END
+ClientExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/ClientExceptionTest.php
+END
+ClientTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/ClientTest.php
+END
+HelpersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/HelpersTest.php
+END
+ConnectionParametersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/ConnectionParametersTest.php
+END
+CommunicationExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/CommunicationExceptionTest.php
+END
+ServerExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/ServerExceptionTest.php
+END
+PredisExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/PredisExceptionTest.php
+END
+ConnectionFactoryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/ConnectionFactoryTest.php
+END
+ResponseQueuedTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/ResponseQueuedTest.php
+END
+ResponseErrorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/Predis/tests/Predis/ResponseErrorTest.php
+END

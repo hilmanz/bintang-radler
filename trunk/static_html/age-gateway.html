@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>RADLER</title>
+	<meta name="description" content="RADLER">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta name="author" content="RADLER">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/radler.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- // IE  // -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <!-- // PLUGIN  // -->
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="js/radler.js"></script>
+</head>
+<body>
+<div id="body">
+    <div id="page">
+        <div id="thecontent">
+        	<div class="page_section" id="age-gateway">
+                <div id="container">
+                    <div class="center-title">
+                        <img src="images/landing/title.png" />
+                    </div>
+                    <div id="gateway-form">
+                    <form class="inputBirth" method="post" action="index.html">
+                        <input type="text" name="dday" onBlur="if(this.value=='')this.value='DD';" onFocus="if(this.value=='DD')this.value='';" value="DD"  onchange="handleChange(this,31);" onKeyPress="return isNumberKey(event)" maxlength="2" />
+                        <input type="text" name="dmonth" onBlur="if(this.value=='')this.value='MM';" onFocus="if(this.value=='MM')this.value='';" value="MM" onChange="handleChange(this,12);" onKeyPress="return isNumberKey(event)" maxlength="2"  />
+                        <input type="text" name="dyear" onBlur="if(this.value=='')this.value='YY';" onFocus="if(this.value=='YY')this.value='';" value="YY" onChange="handleChange(this);" onKeyPress="return isNumberKey(event)" maxlength="2"  />
+                        <input type="hidden" name="age_check" value="1" />
+                        <p>BY SUBMITTING THIS FORM, YOU AGREE TO THE PRIVACY AND COOKIE POLICY OF THIS WEBSITE. THIS WEBSITE WILL MAKE USE OF COOKIES.<br>
+                            TO LEARN MORE, PLEASE READ OUR 
+                            <a href="terms-conditions.html" target="_blank">PRIVACY AND COOKIE POLICY</a>
+                            <a href="http://www.drink-savvy.com/site_en/" target="_blank">Drink-Savvy</a>
+                            <a href="http://www.multibintang.co.id/" target="_blank">Company Information</a></p>
+                        <div class="row">
+                         <input type="submit" value="ENTER" class="button" />
+                        </div>
+                    </form>
+                    </div><!-- end #gateway-form -->
+                    <div class="ice-container">
+                        <div class="ice4">
+                            <img src="images/landing/ice4.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="ice3">
+                            <img src="images/landing/ice3.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="ice2">
+                            <img src="images/landing/ice2.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="ice1">
+                            <img src="images/landing/ice1.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="flare">
+                            <img src="images/landing/lens_flare.png" />
+                        </div><!-- end .flare -->
+                    </div><!-- end .ice-container -->
+                </div><!-- end #container -->
+            </div><!-- end #home -->
+      </div>
+    </div><!-- end #page -->
+</div><!-- end #body -->		
+</body>
+</html>

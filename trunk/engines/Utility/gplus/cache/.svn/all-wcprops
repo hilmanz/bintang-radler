@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/gplus/cache
+END
+apiCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/gplus/cache/apiCache.php
+END
+apiFileCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/gplus/cache/apiFileCache.php
+END
+apiMemcacheCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/gplus/cache/apiMemcacheCache.php
+END
+apiApcCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/bintang-radler/!svn/ver/10/trunk/engines/Utility/gplus/cache/apiApcCache.php
+END

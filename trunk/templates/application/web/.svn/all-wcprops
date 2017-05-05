@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/bintang-radler/!svn/ver/63/trunk/templates/application/web
+END
+login_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/bintang-radler/!svn/ver/12/trunk/templates/application/web/login_message.html
+END
+landing.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/bintang-radler/!svn/ver/54/trunk/templates/application/web/landing.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/bintang-radler/!svn/ver/12/trunk/templates/application/web/footer.html
+END
+player_details.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/bintang-radler/!svn/ver/12/trunk/templates/application/web/player_details.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/bintang-radler/!svn/ver/12/trunk/templates/application/web/message.html
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/bintang-radler/!svn/ver/12/trunk/templates/application/web/register.html
+END
+toc.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/bintang-radler/!svn/ver/63/trunk/templates/application/web/toc.html
+END
+meta.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/bintang-radler/!svn/ver/64/trunk/templates/application/web/meta.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/bintang-radler/!svn/ver/12/trunk/templates/application/web/header.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/bintang-radler/!svn/ver/64/trunk/templates/application/web/home.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/bintang-radler/!svn/ver/12/trunk/templates/application/web/login.html
+END
+thanks.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/bintang-radler/!svn/ver/30/trunk/templates/application/web/thanks.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/bintang-radler/!svn/ver/44/trunk/templates/application/web/master.html
+END

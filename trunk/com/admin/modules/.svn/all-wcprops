@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules
+END
+listuser.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/listuser.php
+END
+administrator.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/administrator.php
+END
+settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/settings.php
+END
+event.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/event.php
+END
+moderation.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/moderation.php
+END
+register.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/register.php
+END
+project.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/project.php
+END
+changepassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/changepassword.php
+END
+home.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/home.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/bintang-radler/!svn/ver/4/trunk/com/admin/modules/login.php
+END

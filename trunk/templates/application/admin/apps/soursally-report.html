@@ -1,0 +1,126 @@
+<script>
+	{literal}
+	
+	$(document).on('change','#status',function(){
+		var id = $(this).attr('prop'); 
+		var n_status = $(this).val(); 
+		
+		$.post(basedomain+"home/ajaxconfirmed" ,{n_status:n_status, id:id}, function(confirmedajax){			
+				
+			if(n_status == 2){
+				alert('finalist');
+			}else if(n_status == 3){
+				alert('winner');
+			}else{
+				alert('cancel');
+			}
+		},"JSON");
+	});
+	
+</script>
+	{/literal}
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-primary">
+      <div class="panel-body">
+          <table class="table table-bordered table-hover table-striped tablesorter">
+            <thead>
+              <tr class="orange">
+                <th width="80" class="center"><h3><span class="icons icon-text">&nbsp;</span></h3></th>
+                <th colspan="8"><h3>User Flavour List</h3></th>
+              </tr>
+              <tr>
+                <th class="center" width="80"><h3><span>No</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Name</span> <i class="fa fa-sort"></i></h3></th> 
+                <th><h3><span>Flavour Name</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Yoggy</span></i></h3></th>
+                <th><h3><span>Ingredients</span></i></h3></th>
+                <th><h3><span>Date</span></h3></th>
+                <th><h3><span>Like Count</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Voted Count</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Moderation</span> <i class="fa fa-sort"></i></h3></th>
+              </tr>
+            </thead>
+            <tbody class="pagingenotourage">
+              	{foreach from=$list key=k item=val  }
+        				<tr>
+        					<td class="center">{$val.no}</td>
+        					<td>{$val.name}</td> 
+        					<td>{$val.flavor_name}</td>
+                  <td align="center">
+                    <img width="50" src="{$val.link_img}" />
+                  </td>
+                  <td>
+                    <span>1. {$val.ingredient[1]}</span><br>
+                    <span>2. {$val.ingredient[2]}</span><br>
+                    <span>3. {$val.ingredient[3]}</span><br>
+                    <span>4. {$val.ingredient[4]}</span>
+                  </td>
+                  <td>
+                    Upload Date: {if $val.datetimes}{$val.datetimes}{else}---{/if}<br>
+                    Last Liked: {if $val.liked_date}{$val.liked_date}{else}---{/if}<br>
+                    Last Voted: {if $val.voted_date}{$val.voted_date}{else}---{/if}
+                  </td>
+                  <td>{$val.vote_like}</td>
+        					<td>{$val.vote_count}</td>
+        					<td align="center">
+        						<select id="status"  prop="{$val.id}" >
+        							<option value="1" class="green" > - </option>
+        							<option value="2" class="blue" {if $val.n_status == 2} selected {/if}>Finalist</option>
+        							<option value="3" class="red" {if $val.n_status == 3} selected {/if}>Winner</option> 
+        						</select>
+        					</td>
+        				</tr>
+        				{/foreach}                   
+              <tr>
+            </tbody>
+          </table>
+      </div><!-- /.panel-body -->
+    </div><!-- /.panel-primary -->
+     <ul class="pagination" id="pagingajaxlist" ></ul><!-- /.pagination -->
+  </div><!-- /.col-lg-12 -->
+</div><!-- /.row -->
+
+<script>
+  getpaging(0,{$total},"pagingajaxlist","paging_flavour",20);
+  {literal}
+  function paging_flavour(fungsi,start){
+    $.get(basedomain+"home/ajaxPaging",{start:start,ajax:1},function(response){
+        if(response.status){
+          var htm = '';
+            
+          $.each(response.data.result,function(k,v){
+            htm+='<tr>';
+              htm+='<td class="center">'+v.no+'</td>';
+              htm+='<td>'+v.name+'</td> ';
+              htm+='<td>'+v.flavor_name+'</td>';
+              htm+='<td align="center"><img width="50" src="'+v.link_img+'" /></td>';
+              htm+='<td>';
+                    htm+='<span>1. '+v.ingredient[1]+'</span><br>';
+                    htm+='<span>2. '+v.ingredient[2]+'</span><br>';
+                    htm+='<span>3. '+v.ingredient[3]+'</span><br>';
+                    htm+='<span>4. '+v.ingredient[4]+'</span>';           
+              htm+='</td>';
+              htm+='<td>';
+                htm+='Upload Date: '+((v.datetimes)?v.datetimes:'---')+'<br>';
+                htm+='Last Liked:: '+((v.liked_date)?v.liked_date:'---')+'<br>';
+                htm+='Last Voted: '+((v.voted_date)?v.voted_date:'---')+'';
+              htm+='</td>';
+              htm+='<td>'+v.vote_like+'</td>';
+              htm+='<td>'+v.vote_count+'</td>';
+              htm+='<td align="center">';
+                htm+='<select id="status"  prop="'+v.id+'" >';
+                  htm+='<option value="1" class="green" > - </option>';
+                  htm+='<option value="2" class="blue" '+((v.n_status==2)?'selected':'')+'>Finalist</option>';
+                  htm+='<option value="3" class="red" '+((v.n_status==3)?'selected':'')+'>Winner</option>';
+                htm+='</select>';
+              htm+='</td>';
+            htm+='</tr>';
+          });
+
+          $('.pagingenotourage').html(htm);
+        }
+    },"JSON");
+  }
+  {/literal}
+</script>

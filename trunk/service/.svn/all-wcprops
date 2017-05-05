@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/bintang-radler/!svn/ver/13/trunk/service
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/bintang-radler/!svn/ver/13/trunk/service/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/bintang-radler/!svn/ver/13/trunk/service/index.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/bintang-radler/!svn/ver/13/trunk/service/common.php
+END

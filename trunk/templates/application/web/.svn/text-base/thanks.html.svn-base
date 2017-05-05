@@ -1,0 +1,31 @@
+<div id="body">
+    <div id="page">
+        <div id="thecontent">
+            <div class="page_section" id="getitPageThanks">
+                <div id="container">
+                    <div class="center-title">
+                        <img src="{$basedomain}assets/images/comingsoon/title3.png" />
+                        <a href="http://preview.kanadigital.com/radler/" class="button">BACK TO HOME</a>
+                    </div>
+                    <div class="ice-container">
+                        <div class="ice4">
+                            <img src="{$basedomain}assets/images/comingsoon/ice4.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="ice3">
+                            <img src="{$basedomain}assets/images/comingsoon/ice3.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="ice2">
+                            <img src="{$basedomain}assets/images/comingsoon/ice2.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="ice1">
+                            <img src="{$basedomain}assets/images/comingsoon/ice1.png" />
+                        </div><!-- end .ice4 -->
+                        <div class="flare">
+                            <img src="{$basedomain}assets/images/comingsoon/lens_flare.png" />
+                        </div><!-- end .flare -->
+                    </div><!-- end .ice-container -->
+                </div><!-- end #container -->
+            </div><!-- end #getitPageThanks -->
+      </div>
+    </div><!-- end #page -->
+</div><!-- end #body -->        

@@ -1,0 +1,57 @@
+<table border=1>
+	<tr>
+	 
+		<th>Total Registrant</th>
+	<tr>
+    <tr>
+		 
+		<td>{$headerReport.total}</td>
+	<tr>
+</table>
+<br/>
+<br/>
+<div class="panel-body">
+  <table class="table table-bordered table-hover table-striped tablesorter" border=1>
+	<thead>
+	  <tr class="orange"> 
+		<th colspan="6"><h3>REPORT DATA</h3></th>
+	  </tr>
+	  <tr>
+		 <th class="center" width="80"><h3><span>No</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Register Date</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Name</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Email</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Phone Number</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>FB ID</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>TWITTER ID</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>INSTAGRAM ID</span> <i class="fa fa-sort"></i></h3></th>
+                <th><h3><span>Photo</span> <i class="fa fa-sort"></i></h3></th>
+	  </tr>
+	</thead>
+	<tbody class="pagingenotourage">
+			{foreach from=$enturagereport key=k item=val  }
+				<tr>
+					<td class="center">{$val.no}</td>
+					<td>{$val.register_date}</td>
+					<td>{$val.name}</td>
+					<td>{$val.email}</td>
+					<td>{$val.phone_number}</td>
+					<td>{$val.facebookID}</td>
+					<td>{$val.twitterID}</td>
+					<td>{$val.instagramID}</td>
+					<td>
+						{if $val.images==''}
+							<img height="100px" width="100px" src="{$basedomainpath}public_assets/contests/default.jpg" />
+						{else}
+                        	<a href="javascript:void(0)" class="showPopup arkPopupImages" call="{$basedomainpath}public_assets/contests/{$val.images}">
+							<img height="100px" width="100px" src="{$basedomainpath}public_assets/contests/{$val.images}" />
+                            </a>
+						{/if}						
+					</td>
+				</tr>
+				{/foreach} 
+	 
+	  
+	</tbody>
+  </table>
+</div><!-- /.panel-body --> 

@@ -1,0 +1,50 @@
+<div id="event-detail">
+    <div class="panel-dashboard">
+    	<div class="group-date fr">
+       		<div class="input-daterange input-group mainInputDate" id="datepicker">
+            	<div class="datefrom">
+    				<input id="from" type="text" class="input-sm form-control" name="start" /><span class="cal-icon icon-calendar"></span>
+    			</div>
+    			<span class="input-group-addon">to</span>
+    			<div class="datefrom">
+    				<input id="to" type="text" class="input-sm form-control" name="end" /><span class="cal-icon icon-calendar"></span>
+    			</div>
+    		</div><!-- /.mainInputDate -->
+       </div><!-- /.group-date -->
+    </div><!-- /.panel-dashboard -->
+    <div class="content-chart">
+   		<div class="row">
+    	<div class="event-detail col-lg-12 ">
+        	<div class="table-responsive">
+              <table class="table table-bordered table-hover tablesorter">
+                <thead class="tittle-table">
+            		<tr>
+						<td class="orange" colspan="11">
+							<span class="icon-archive"></span>
+							<span class="title-table">List Event</span>
+							{*}<a href="{$basedomain}event/addnewevent" class="fr btn btn-danger">Add New</a>{/*}
+						</td>
+					</tr>
+                  <tr>
+                    <th>Project</th>
+                    <th>Event </th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+				{foreach from=$flowlist key=k item=v}
+                  <tr>
+                    <td>{if $v.brand==4}Amild{else}Marlboro{/if}</td>
+                    <td>{$v.name}</td>
+                    <td><a href="{$basedomain}event/createflowevent?brand={$v.brand}&flowid={$v.id}" class="btn btn-link">Create Flow</a></td>
+                  </tr>
+				 {/foreach}
+                </tbody>
+              </table>
+            </div>
+      </div><!-- /.Ba-Track -->
+    </div><!-- /.row -->
+    </div><!---ENDcontent-chart-->
+</div><!-- /#BrandEngagement -->
+<script>
+</script>

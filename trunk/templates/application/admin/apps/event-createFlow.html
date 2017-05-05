@@ -1,0 +1,76 @@
+<div id="event-createFlow">
+    <div class="panel-dashboard">
+    	<div class="group-date fr">
+       		<div class="input-daterange input-group mainInputDate" id="datepicker">
+            	<div class="datefrom">
+    				<input id="from" type="text" class="input-sm form-control" name="start" /><span class="cal-icon icon-calendar"></span>
+    			</div>
+    			<span class="input-group-addon">to</span>
+    			<div class="datefrom">
+    				<input id="to" type="text" class="input-sm form-control" name="end" /><span class="cal-icon icon-calendar"></span>
+    			</div>
+    		</div><!-- /.mainInputDate -->
+       </div><!-- /.group-date -->
+    </div><!-- /.panel-dashboard -->
+    <div class="content-chart">
+   		<div class="row">
+    	<div class="event-createFlow col-lg-12 ">
+        	<div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title orange"><span class="icon-tag"></span>&nbsp; Template Generator</h3>
+              </div><!-- /.panel-heading -->
+              <div class="panel-body">
+                <div class="form-template">
+                    <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="" >
+				
+                        <div class="control-group">
+                        	<label class="control-label" for="">Name</label>
+                        	<div class="controls">
+                        		<input type="text" id="nameFlow" value="{$createlist.name}" >
+                        	</div>
+                        </div><!-- /.control-group -->
+					{if ($createlist.name=='games' || $createlist.name=='brosur')  && $createlist.name !='registration'}
+                        <div class="control-group">
+                        	<label class="control-label" for="">Scheme ID</label>
+                        	<div class="controls">
+                                <input id="scheme ID" name="schemeid" placeholder="scheme ID" value="{$createlist.schemaid}" type="text">
+                                <button class="btn btn-danger" type="button">Generate</button>
+                        	</div>
+                        </div><!-- /.control-group -->
+                        <div class="control-group">
+                        	<label class="control-label" for="">Games ID</label>
+                        	<div class="controls">
+                        		<input type="text" id="gamesID" name="gamesid" placeholder="Games ID" value="{$createlist.gamesid}">
+                                <button class="btn btn-danger" type="button">Generate</button>
+                        	</div>
+                        </div><!-- /.control-group -->
+					{/if}
+					{if $createlist.name=='video' && $createlist.name !='registration' }
+                        <div class="control-group">
+                        	<label class="control-label" for="">Upload</label>
+                        	<div class="controls">
+                				<input type="file" id="images" name="images">
+                        	</div>
+                        </div><!-- /.control-group -->
+					 {/if}
+                        <div class="control-group">
+                        	<div class="controls">
+                        		<input type="submit" class="btn btn-danger" name="submit" value="Submit">
+                        	</div>
+                       </div><!-- /.control-group -->
+                    </form>
+            </div>
+              </div><!-- /.panel-body -->
+            </div><!-- /.panel-primary -->
+          </div><!-- /.uniqVisitorLogin -->
+      </div><!-- /.template-generator -->
+    </div><!-- /.row -->
+    </div><!---ENDcontent-chart-->
+</div><!-- /#BrandEngagement -->
+<script>
+{literal}
+$(document).ready(function(){
+$('#cpFocus').colorpicker({showOn:'focus'});
+});
+</script>
+{/literal}

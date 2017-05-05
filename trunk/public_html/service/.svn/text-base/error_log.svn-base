@@ -1,0 +1,5 @@
+[26-Dec-2013 10:31:36 Asia/Jakarta] PHP Notice:  Undefined variable: filter2 in /home/dmaze/com/application/helper/playerSubmitHelper.php on line 106
+[26-Dec-2013 10:31:36 Asia/Jakarta] PHP Notice:  Undefined variable: filter2 in /home/dmaze/com/application/helper/playerSubmitHelper.php on line 119
+[26-Dec-2013 10:31:36 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dmaze/com/application/helper/playerSubmitHelper.php:208) in /home/dmaze/com/application/ServiceAPI.php on line 67
+[26-Dec-2013 10:31:36 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dmaze/com/application/helper/playerSubmitHelper.php:208) in /home/dmaze/com/application/ServiceAPI.php on line 68
+[26-Dec-2013 10:31:36 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dmaze/com/application/helper/playerSubmitHelper.php:208) in /home/dmaze/com/application/ServiceAPI.php on line 69
